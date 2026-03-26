@@ -17,7 +17,7 @@ class BranchRepositoryTest {
 
         // CREATE
         Branch branch = BranchFactory.createBranch(
-                1, "Main Branch", "123 Street", "Cape Town", "Alice"
+                1, "Main Branch", "143 Bloom Street", "Cape Town", "Micky"
         );
 
         Branch created = repo.create(branch);
