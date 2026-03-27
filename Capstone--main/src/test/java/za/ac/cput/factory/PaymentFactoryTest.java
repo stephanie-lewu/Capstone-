@@ -1,3 +1,8 @@
+/* PaymentFactoryTest.java
+PaymentFactoryTest model class
+Author: Owen jr Makene (223219665)
+Date: 20 March 2026
+*/
 package za.ac.cput.factory;
 
 import org.junit.jupiter.api.Test;
