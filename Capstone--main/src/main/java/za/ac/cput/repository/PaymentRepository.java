@@ -1,3 +1,8 @@
+/* PaymentRepository.java
+Payment model class
+Author: Owen jr Makene (223219665)
+Date: 20 March 2026
+*/
 package za.ac.cput.repository;
 
 import za.ac.cput.domain.Payment;
