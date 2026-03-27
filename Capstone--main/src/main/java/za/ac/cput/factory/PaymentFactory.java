@@ -1,3 +1,8 @@
+/* PaymentFactory.java
+PaymentFactory model class
+Author: Owen jr Makene (223219665)
+Date: 20 March 2026
+*/
 package za.ac.cput.factory;
 
 import za.ac.cput.domain.Payment;
