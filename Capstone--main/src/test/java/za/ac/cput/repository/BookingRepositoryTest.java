@@ -1,3 +1,8 @@
+/* BookingRepositoryTest.java
+BookingRepositoryTest model class
+Author: Tanatswa Mabhodha (220637482)
+Date: 20 March 2026
+*/
 package za.ac.cput.repository;
 
 
@@ -43,6 +48,51 @@ public class BookingRepositoryTest {
         assertNotNull(readBooking);
         System.out.println(readBooking);
     }
+
+    //UPDATE
+     @Test
+    public void update(){
+    Booking booking = BookingFactory.buildBooking(
+            "B003",
+            "M003",
+            "C003",
+            "2026/03/25",
+            "2026/03/27",
+            1300.00
+    );
+     repository.create(booking);
+      Booking updateBooking = new Booking.Builder()
+              .setBookingID("B003")
+              .setMemberID("M003")
+              .setCarID("C003")
+              .setStartDate("2026/03/25")
+              .setEndDate("2026/03/27")
+              .setTotalCost(1300.00)
+              .build();
+
+      Booking updated = repository.update(updateBooking);
+      assertNotNull(updated);
+        System.out.println("Update:" +updated);
+    }
+        //DELETE
+    @Test
+    public void delete(){
+    Booking booking = BookingFactory.buildBooking(
+            "B004",
+            "M004",
+            "C004",
+            "2026/03/22",
+            "2026/03/24",
+            1800.00
+    );
+    repository.create(booking);
+    boolean deleted = repository.delete("B004");
+
+    assertTrue(deleted);
+        System.out.println("The Booking has been successfully deleted. ");
+
+    }
+
 
 
 }

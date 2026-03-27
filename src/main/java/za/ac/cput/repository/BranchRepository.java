@@ -18,6 +18,7 @@ public class BranchRepository implements IBranchRepository {
     public static IBranchRepository getRepository() {
         if (repository == null) {
             repository = new BranchRepository();
+            
         }
         return repository;
     }
