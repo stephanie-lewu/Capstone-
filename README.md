@@ -5,10 +5,9 @@
 ---
 
 ## Project Description
-This project is a Car Rental System built using Java and Maven.
-The system is developed using Domain Driven Design (DDD) principles
-including Entities, Factories, and Repositories.
-Test Driven Development (TDD) is applied throughout the project.
+A car rental management system designed for managing vehicle bookings, customer rentals, and branch operations.
+The system tracks available cars, handles customer bookings, processes payments, and manages insurance options
+for rentals. It ensures efficient allocation of vehicles across different branches while maintaining accurate records of rentals and customer activity.
 
 ---
 
@@ -53,15 +52,48 @@ src/
 
 ---
 
-## Entities Implemented
-- **Member** - Stephanie Tola Oluwafemi Lewu (230211216)
-- **Booking** - Tanatswa Mabhodha (220637482)
-- **Payment** - Owen Jnr Makene (223219665)
-- **Insurance** - Thandeka Chantal Malande (222857005)
-- **Car** - Malwandla Blessing Mahori (230962963)
-- **Branch** - Solomon Elias Machaule (222359366)
+## Entities 
+
+- **Car** - Vehicles available for rental
+- **Member** - Customers who rent cars
+- **Booking** - Records of car rentals
+- **Branch** - Locations managing car inventory
+- **Payment** - Transactions for bookings
+- **Insurance** - Optional coverage for rentals
 
 ---
+
+  ## Group Members
+- **Leader** - Stephanie Tola Oluwafemi Lewu 230211216 - Member Entity
+- **Member 2** - Tanatswa Mabhodha 220637482 - Booking Entity
+- **Member 3** - Owen Jnr Makene 223219665 - Payment Entity
+- **Member 4** - Thandeka Chantal Malande 222857005 - Insurance Entity
+- **Member 5** - Malwandla Blessing Mahori 230962963 - Car Entity
+- **Member 6** - Solomon Elias Machaule 222359366 - Branch Entity
+
+---
+
+## Contributing Guidelines
+### Pull Request Process
+- Create a branch using your student number
+- Implement your assigned feature with tests (TDD)
+- Ensure all tests pass
+- Update documentation where necessary
+- Create a Pull Request to the main branch
+- Request review from the team leader
+- Address any review comments
+
+---
+
+### Merge after approval
+
+#### Code Review Checklist
+- Follows Builder Pattern
+- Includes TDD tests
+- Correct package structure (domain, factory, repository)
+- Author comments included in code
+- No merge conflicts
+- All tests passing
 
 ## Technologies Used
 - Java
