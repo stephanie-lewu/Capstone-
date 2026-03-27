@@ -62,6 +62,43 @@ src/
 
 ---
 
+## Package Descriptions
+
+### Domain Package
+The domain package contains the entity classes of the system.
+Each entity represents a real world object in the Car Rental System
+such as Booking, Car, Member, Payment, Insurance and Branch.
+The entities are built using the Builder Pattern which allows
+objects to be created step by step in a controlled way.
+
+### Factory Package
+The factory package contains the factory classes for each entity.
+A factory class is responsible for creating instances of an entity.
+It centralizes the creation of objects so that the rest of the
+system does not need to worry about how objects are created.
+This follows the Domain Driven Design (DDD) principle of factories.
+
+### Repository Package
+The repository package contains the interfaces and implementation
+classes for storing and retrieving entities.
+Each repository provides the basic CRUD operations which are
+Create, Read, Update and Delete.
+This follows the Domain Driven Design (DDD) principle of repositories
+and ensures the system codes to abstraction not concretion.
+
+### Factory Test Package
+The factory test package contains the test classes for each factory.
+These tests verify that the factory classes are creating objects
+correctly. This follows the Test Driven Development (TDD) approach
+where tests are written to prove the code works as expected.
+
+### Repository Test Package
+The repository test package contains the test classes for each
+repository. These tests verify that the CRUD operations are working
+correctly for each entity. This ensures the repository classes
+are functioning as expected before the code is merged.
+
+
 ## Entities 
 
 - **Car** - Vehicles available for rental
